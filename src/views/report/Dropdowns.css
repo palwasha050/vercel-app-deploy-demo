@@ -1,0 +1,23 @@
+  .datee{
+    background-color: #FFD9E1;
+    width: 100%;
+    height: 60px;
+  }
+  
+  .grid {
+    padding: 3rem;
+    background-color: #FFD9E1;
+    width: 100%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    width: 100%;
+    height: 100%;
+    background-color: teal;
+  }
+  

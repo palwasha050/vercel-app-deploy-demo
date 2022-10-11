@@ -76,35 +76,42 @@ const menuItems = {
               type: 'item',
               url: '/basic/phase'
             },
+            
+            {
+              id: 'sector',
+              title: 'Sector',
+              type: 'item',
+              url: '/sector'
+            },
             {
               id: 'category',
               title: 'Category',
               type: 'item',
-              url: '/basic/category'
+              url: '/category'
             },
             {
               id: 'ComplaintType',
               title: 'Complaint Type',
               type: 'item',
-              url: '/basic/complaintType'
+              url: '/complaintType'
             },
             {
               id: 'post',
               title: 'Post',
               type: 'item',
-              url: '/basic/post'
+              url: '/post'
           },
             {
               id: 'officer',
               title: 'Officer',
               type: 'item',
-              url: '/basic/officer'
+              url: '/officer'
             },
             {
               id: 'user',
               title: 'User',
               type: 'item',
-              url: '/basic/user'
+              url: '/user'
             },
           ]
         }

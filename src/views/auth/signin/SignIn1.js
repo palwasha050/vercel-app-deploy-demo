@@ -38,23 +38,7 @@ const Signin1 = () => {
                   Signup
                 </NavLink>
               </p>
-              <Alert variant="primary" className="text-left mt-3">
-                Username:
-                <CopyToClipboard text="demo@gmail.com">
-                  <Button variant="outline-primary" as={Link} to="#" className="badge mx-2 mb-2" size="sm">
-                    {' '}
-                    <i className="fa fa-user mr-1" /> demo@gmail.com{' '}
-                  </Button>
-                </CopyToClipboard>
-                <br />
-                Password:
-                <CopyToClipboard text="123456">
-                  <Button variant="outline-primary" as={Link} to="#" className="badge mx-2" size="sm">
-                    {' '}
-                    <i className="fa fa-lock mr-1" /> 123456{' '}
-                  </Button>
-                </CopyToClipboard>
-              </Alert>
+              
             </Card.Body>
           </Card>
         </div>

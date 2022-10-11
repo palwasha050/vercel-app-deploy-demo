@@ -46,6 +46,7 @@ const routes = [
     path: '/auth/signup-1',
     component: lazy(() => import('./views/auth/signup/SignUp1'))
   },
+  
   {
     path: '*',
     layout: AdminLayout,

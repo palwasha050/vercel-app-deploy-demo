@@ -63,38 +63,37 @@ const routes = [
       },
       {
         exact: true,
-        path: '/basic/phase',
-        component: lazy(() => import('./views/ui-elements/phase/pages/Home'))
+        path: '/phase',
+        component: lazy(() => import('./views/ui-elements/phase/Phase'))
       },
       {
         exact: true,
-        path: '/basic/category',
+        path: '/sector',
+        component: lazy(() => import('./views/ui-elements/sector/Sector'))
+      },
+      {
+        exact: true,
+        path: '/category',
         component: lazy(() => import('./views/ui-elements/category/Category'))
       },
       {
-        path:"/phase/:id" ,
-        exact: true, 
-        component: lazy(() => import('./views/ui-elements/phase/pages/user/Users'))
-      }
-      ,
-      {
         exact: true,
-        path: '/basic/complaintType',
+        path: '/complaintType',
         component: lazy(() => import('./views/ui-elements/complaintType/ComplaintType'))
       },
       {
         exact: true,
-        path: '/basic/post',
+        path: '/post',
         component: lazy(() => import('./views/ui-elements/post/Post'))
       },
       {
         exact: true,
-        path: '/basic/officer',
+        path: '/officer',
         component: lazy(() => import('./views/ui-elements/officer/Officer'))
       },
       {
         exact: true,
-        path: '/basic/user',
+        path: '/user',
         component: lazy(() => import('./views/ui-elements/user/User'))
       },
       {
@@ -111,42 +110,37 @@ const routes = [
     routes: [
       {
         exact: true,
-        path: '/app/phaseTableHome',
-        component: lazy(() => import('./views/ui-elements/phase/pages/Home'))
-      },
-      {
-        exact: true,
         path: '/app/report',
         component: lazy(() => import('./views/report/Report'))
       },
       {
         exact: true,
-        path: '/basic/phase',
+        path: '/phase',
         component: lazy(() => import('./views/ui-elements/phase/Phase'))
       },
       {
         exact: true,
-        path: '/basic/category',
+        path: '/category',
         component: lazy(() => import('./views/ui-elements/category/Category'))
       },
       {
         exact: true,
-        path: '/basic/complaintType',
+        path: '/complaintType',
         component: lazy(() => import('./views/ui-elements/complaintType/ComplaintType'))
       },
       {
         exact: true,
-        path: '/basic/post',
+        path: '/post',
         component: lazy(() => import('./views/ui-elements/post/Post'))
       },
       {
         exact: true,
-        path: '/basic/officer',
+        path: '/officer',
         component: lazy(() => import('./views/ui-elements/officer/Officer'))
       },
       {
         exact: true,
-        path: '/basic/user',
+        path: '/user',
         component: lazy(() => import('./views/ui-elements/user/User'))
       },
       {

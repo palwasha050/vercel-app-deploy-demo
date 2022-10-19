@@ -1,11 +1,9 @@
-import React from 'react'
+import '../../../App.css' ;
 
-const Post = () => {
+function Post() {
   return (
-    <div>
-      post
-    </div>
-  )
+        <div>Post</div>
+    );
 }
 
-export default Post
+export default Post;

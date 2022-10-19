@@ -26,12 +26,14 @@ const Signin1 = () => {
                 <i className="feather icon-unlock auth-icon" />
               </div>
               <FirebaseLogin />
+
               <p className="mb-2 text-muted">
                 Forgot password?{' '}
                 <NavLink to="/auth/reset-password-1" className="f-w-400">
                   Reset
                 </NavLink>
               </p>
+              
               <p className="mb-0 text-muted">
                 Don’t have an account?{' '}
                 <NavLink to="/auth/signup-1" className="f-w-400">

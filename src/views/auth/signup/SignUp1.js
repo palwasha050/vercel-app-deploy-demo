@@ -4,12 +4,10 @@ import { NavLink, Link } from 'react-router-dom';
 
 import Breadcrumb from '../../../layouts/AdminLayout/Breadcrumb';
 
-function SignUp1(){
+const SignUp1 = () => {
 
-  const postData=()=>{
-        
-  }
-
+   
+  
   return (
     <React.Fragment>
       <Breadcrumb />
@@ -44,7 +42,7 @@ function SignUp1(){
                       Send me the <Link to="#"> Newsletter</Link> weekly.
                     </label>
                   </div>
-                  <button className="btn btn-primary mb-4" onClick={postData}>Sign up</button>
+                  <button className="btn btn-primary mb-4">Sign up</button>
                   <p className="mb-2">
                     Already have an account?{' '}
                     <NavLink to="/auth/signin-1" className="f-w-400">

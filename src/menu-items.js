@@ -74,7 +74,7 @@ const menuItems = {
               id: 'phase',
               title: 'Phase',
               type: 'item',
-              url: '/basic/phase'
+              url: '/phase'
             },
             
             {

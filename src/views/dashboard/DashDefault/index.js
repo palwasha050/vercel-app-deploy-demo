@@ -1,34 +1,45 @@
 import React from 'react';
 import { Row, Col, Card, CardHeader,CardBody } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import avatar1 from '../../../assets/images/user/avatar-1.jpg';
-import avatar2 from '../../../assets/images/user/avatar-2.jpg';
-import avatar3 from '../../../assets/images/user/avatar-3.jpg';
 import { Donutchart } from '../../donutChart/Donutchart';
 import MyComponent from '../../filter/ButtonFilter';
 import Filterr from '../../filter/Filterr';
 import { cardsData } from './Data';
+import DTable from '../Table';
+import MyCard from '../Card1';
+import MyCard2 from '../Card2';
 
 
 const DashDefault = () => {
-
+  const currentDate = new Date();
+  const currentMonth = currentDate.toLocaleString('default', { month: 'long' });
+  const previousMonth = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1));
   return (
     <React.Fragment>
-      <Filterr className='align-right'/>
       <Row>
-      {cardsData.map((card, id) => { 
-        return(
       <Col md={6} xl={4}>
           <Card>
-            <Card.Header><h3 className='text-center font-mono font-extrabold'>{card.title}</h3></Card.Header>
+            <Card.Header><h3 className='text-center font-mono font-extrabold'>{previousMonth}</h3></Card.Header>
             <Card.Body>
-              <h4 className='text-left font-mono font-extrabold' >Total: 30</h4>
-              <Donutchart/>
+              <MyCard2/>
             </Card.Body>
           </Card>
       </Col>
-      );
-    })}  
+      <Col md={6} xl={4}>
+          <Card>
+            <Card.Header><h3 className='text-center font-mono font-extrabold'>{currentMonth}</h3></Card.Header>
+            <Card.Body>
+              <MyCard/>
+            </Card.Body>
+          </Card>
+      </Col>
+
+      </Row>
+
+      <Row>
+      <Col md={12} xl={16}>
+        <DTable/>
+      </Col>  
       </Row>
       
     </React.Fragment>

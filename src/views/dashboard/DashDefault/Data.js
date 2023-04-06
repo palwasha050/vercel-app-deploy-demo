@@ -5,18 +5,6 @@ export const cardsData = [
     {
       title: "ELECTRICAL",
     },
-    {
-      title: "MECHANICAL",
-    },
-    {
-        title: "WATER SUPPLY",
-    },
-    {
-        title: "B & R",
-    },
-    {
-        title: "SEWERAGE",
-    },
          
   ];
   

@@ -1,8 +1,8 @@
 {
-  "name": "datta-able-free-react-admin-template",
+  "name": "ems",
   "version": "1.0.1",
   "private": true,
-  "homepage": "https://codedthemes.com/demos/admin-templates/datta-able/react/free/",
+  "homepage": "https://palwashaali050.github.io/ems2",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -60,6 +60,8 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "json-server": "json-server --watch db.json --port 3001",
     "build": "react-scripts build",
@@ -86,6 +88,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
+    "gh-pages": "^5.0.0",
     "node-sass": "^6.0.1",
     "postcss": "^8.4.17",
     "prettier": "2.6.0",

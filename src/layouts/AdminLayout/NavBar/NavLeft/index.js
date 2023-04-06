@@ -24,7 +24,7 @@ const NavLeft = () => {
   return (
     <React.Fragment>
       <div className='text-center ml-4 pl-2'>
-      DHA DASHBOARD
+      Energy Management System
       </div>
     </React.Fragment>
   );
